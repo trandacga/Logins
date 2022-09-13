@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto" sans-serif;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.wrap {
+  max-width: 696px;
+  overflow: hidden;
+}
+
+.title {
+  margin-bottom: 50px;
+}
+.title h3 {
+  font-weight: 400;
+  font-size: 30px;
+  color: #000000;
+}
+
+.subscribe {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: -20px;
+}
+.subscribe-field {
+  margin-left: 20px;
+}
+.subscribe input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  outline: none;
+}
+.subscribe :nth-child(3) {
+  width: 168px;
+}
+.subscribe ::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+button.subscribe-button {
+  border: 1px solid #1976D2;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #1976D2;
+  background: none;
+}
+
+/*# sourceMappingURL=style.css.map */

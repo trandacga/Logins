@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto" sans-serif;
+}
+
+.create-title {
+  margin-bottom: 80px;
+}
+.create-title h2 {
+  font-weight: 400;
+  font-size: 30px;
+  color: #000000;
+}
+
+.container {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.start h3 {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 30px;
+  color: #000000;
+}
+
+.subscribe {
+  width: 100%;
+}
+.subscribe-field {
+  margin-bottom: 20px;
+  position: relative;
+}
+.subscribe-field input {
+  width: 360px;
+  padding: 16px 12px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+}
+.subscribe-field input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.subscribe-button {
+  margin-top: 30px;
+  width: 360px;
+  padding: 8px 0;
+  border: none;
+  background: #1976D2;
+  border-radius: 4px;
+}
+.subscribe-button a {
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.46px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+ion-icon#show-passwork {
+  position: absolute;
+  top: 28%;
+  right: 4%;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 20px;
+}
+ion-icon#show-passwork ion-icon {
+  font-size: 15px;
+}
+
+.pro {
+  padding: 0 20px;
+}
+.pro .progressbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  counter-reset: step;
+  margin-top: 20px;
+}
+.pro .progressbar-step {
+  width: 25px;
+  height: 25px;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+}
+.pro .progressbar-step::before {
+  counter-increment: step;
+  content: counter(step);
+  font-size: 14px;
+}
+.pro .progressbar::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 6px;
+  width: 100%;
+  background-color: #dcdcdc;
+  z-index: -1;
+}
+.pro .progressbar .progressbar-step-active {
+  background: #1976D2;
+  color: #FFFFFF;
+}
+
+.dropdown {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.select {
+  background: #fff;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.select .caret {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 9px solid #333;
+  transform: 0.3s;
+}
+.select .caret-rotate {
+  transform: rotate(180deg);
+}
+
+.menu {
+  text-align: start;
+  list-style: none;
+  background-color: #fff;
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  z-index: 1;
+}
+.menu li {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  color: #000000;
+}
+.menu-open {
+  display: block;
+  opacity: 1;
+  margin-bottom: 0;
+}
+.menu-li {
+  color: #000000;
+}
+
+.title {
+  text-align: start;
+  margin-bottom: 0;
+  padding: 6px 20px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.15px;
+  color: #000000;
+}
+
+/*# sourceMappingURL=style.css.map */
